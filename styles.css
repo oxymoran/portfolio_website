@@ -74,7 +74,7 @@ h6 { font-size: 0.875rem; }
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0.5rem 0.25rem;
+    padding: 1rem;
   }
 
   .hero .container {
@@ -96,9 +96,9 @@ h6 { font-size: 0.875rem; }
 
   /* Make project cards narrower on mobile */
   .project-card {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    max-width: calc(100% - 2rem);
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    max-width: calc(100% - 3rem);
   }
 }
 
