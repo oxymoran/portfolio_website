@@ -70,12 +70,12 @@ h6 { font-size: 0.875rem; }
 @media (max-width: 768px) {
   .hero {
     background-size: contain;
-    min-height: 80vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem 1rem;
+    padding: 1rem 0.5rem;
   }
 
   .hero .container {
@@ -93,6 +93,13 @@ h6 { font-size: 0.875rem; }
 
   .hero p {
     font-size: 1rem;
+  }
+
+  /* Make project cards narrower on mobile */
+  .project-card {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    max-width: calc(100% - 1rem);
   }
 }
 
