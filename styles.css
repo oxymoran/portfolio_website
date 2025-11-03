@@ -69,12 +69,12 @@ h6 { font-size: 0.875rem; }
 /* Mobile-specific fixes */
 @media (max-width: 768px) {
   .hero {
-    background-size: cover;
+    background-size: contain;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1.5rem;
+    padding: 2rem 1rem;
   }
 
   .hero .container {
