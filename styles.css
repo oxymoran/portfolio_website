@@ -42,8 +42,10 @@ h6 { font-size: 0.875rem; }
   background-color: var(--secondary-bg);
   background-image: url('site_images/walnut.jpg');
   background-blend-mode: soft-light;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
   color: var(--text-color);
   padding: 25px 0 100px 0;
   text-align: center;
@@ -52,15 +54,45 @@ h6 { font-size: 0.875rem; }
 }
 
 .hero h1 {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   line-height: 1.2;
   font-weight: 700;
-  margin-bottom: 5px;
+  margin-bottom: 1rem;
 }
 
 .hero p {
-  font-size: 1.5rem;
-  margin-bottom: 5px;
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Mobile-specific fixes */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+
+  .hero .container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
 }
 
 /* Hero Divider (Asymmetrical Curve) */
