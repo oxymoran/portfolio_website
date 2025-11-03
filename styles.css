@@ -69,6 +69,7 @@ h6 { font-size: 0.875rem; }
 /* Mobile-specific fixes */
 @media (max-width: 768px) {
   .hero {
+    background-size: contain;
     min-height: 80vh;
     display: flex;
     flex-direction: column;
