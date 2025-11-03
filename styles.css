@@ -98,9 +98,9 @@ h6 { font-size: 0.875rem; }
 
   /* Make project cards narrower on mobile */
   .project-card {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    max-width: calc(100% - 3rem);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    max-width: calc(100% - 4rem);
   }
 }
 
