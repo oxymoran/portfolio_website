@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trackr | Symptom & Health Journal</title>
+    <title>Support | Causly</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -13,9 +13,11 @@
     <style>
         :root {
             --bg-color: #fdfcf0;
+            /* Matches the cream in your screenshot */
             --text-main: #333333;
             --text-muted: #666666;
-            --accent-teal: #a8d5ba;
+            --accent-blue: #0ea5e9;
+            /* Matches the brand blue */
             --accent-dark: #1e293b;
         }
 
@@ -40,7 +42,7 @@
             padding: 60px;
             border-radius: 12px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
-            border-top: 6px solid var(--accent-teal);
+            border-top: 6px solid var(--accent-blue);
         }
 
         header {
@@ -50,16 +52,9 @@
 
         h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 3.5rem;
+            font-size: 3rem;
             color: var(--accent-dark);
-            margin-bottom: 20px;
-            line-height: 1.2;
-        }
-
-        .subtitle {
-            font-size: 1.4rem;
-            color: var(--text-muted);
-            margin-bottom: 30px;
+            margin-bottom: 10px;
         }
 
         h2 {
@@ -68,7 +63,7 @@
             margin-top: 40px;
             margin-bottom: 20px;
             color: var(--accent-dark);
-            border-bottom: 2px solid var(--accent-teal);
+            border-bottom: 2px solid var(--accent-blue);
             display: inline-block;
             padding-right: 20px;
         }
@@ -91,7 +86,7 @@
 
         li::before {
             content: "•";
-            color: var(--accent-teal);
+            color: var(--accent-blue);
             font-weight: bold;
             display: inline-block;
             width: 1em;
@@ -103,22 +98,6 @@
         strong {
             font-weight: 600;
             color: var(--accent-dark);
-        }
-
-        .cta-button {
-            display: inline-block;
-            background-color: var(--accent-dark);
-            color: white;
-            padding: 15px 30px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            margin-top: 20px;
-            transition: opacity 0.2s;
-        }
-
-        .cta-button:hover {
-            opacity: 0.9;
         }
 
         .footer-note {
@@ -136,7 +115,7 @@
             }
 
             h1 {
-                font-size: 2.5rem;
+                font-size: 2.2rem;
             }
         }
     </style>
@@ -147,44 +126,34 @@
     <div class="container">
 
         <header>
-            <h1>Trackr</h1>
-            <p class="subtitle">Understand your health. Find your patterns.</p>
-            <p>A private, local-first symptom journal designed to help you connect the dots between your lifestyle,
-                environment, and wellbeing.</p>
-            <!-- <a href="#" class="cta-button">Coming Soon to App Store</a> -->
+            <h1>Support</h1>
+            <p>We're here to help you get the most out of Causly.</p>
         </header>
 
-        <h2>Why Trackr?</h2>
-        <p>Your health is complex. Tracking it shouldn't be.</p>
-        <ul>
-            <li><strong>Private & Secure:</strong> Your data never leaves your device. No cloud servers, no data
-                selling.</li>
-            <li><strong>Custom Trackers:</strong> Create trackers for anything—migraines, allergies, mood, or
-                medication.</li>
-            <li><strong>Health Integration:</strong> Automatically syncs sleep, exercise, and heart rate data from Apple
-                Health & Health Connect.</li>
-            <li><strong>Weather Insights:</strong> Automatically logs local weather, AQI, and pollen to help identify
-                environmental triggers.</li>
-        </ul>
+        <h2>Frequently Asked Questions</h2>
 
-        <h2>Features</h2>
-        <p><strong>Smart Journaling</strong><br>
-            Log symptoms in seconds. Add photos, notes, and severity scores with a beautiful, intuitive interface.</p>
+        <p><strong>Where is my data stored?</strong><br>
+            Causly is a "local-first" app. All your data lives right on your device. We do not have servers that store
+            your personal health information.</p>
 
-        <p><strong>Interactive Timeline</strong><br>
-            Visualize your history. See your good days and bad days at a glance.</p>
+        <p><strong>How do I back up my data?</strong><br>
+            Go to <strong>Settings > Data Management</strong>. You can export a backup file which you can save to your
+            iCloud, Google Drive, or email to yourself.</p>
 
-        <p><strong>Export Your Data</strong><br>
-            Need to share with a doctor? Export your logs to PDF or CSV instantly.</p>
+        <p><strong>I submitted a log by mistake. Can I delete it?</strong><br>
+            Yes. Go to the Journal tab, find the day with the incorrect log, tap "Edit" on the entry, and you will find
+            a delete option.</p>
+
+        <h2>Contact Us</h2>
+        <p>If you're experiencing issues, have feature requests, or just want to say hello, please email our support
+            team directly.</p>
+
+        <p><strong>Email:</strong> seagreenstudiosmi@gmail.com</p>
+        <p>We aim to respond to all inquiries within 24-48 hours.</p>
 
         <div class="footer-note">
-            <p>&copy; 2026 Morchris. Trackr All Rights Reserved.</p>
-            <p>
-                <a href="privacy.html"
-                    style="color: var(--text-muted); margin: 0 10px; text-decoration: none;">Privacy</a> |
-                <a href="support.html"
-                    style="color: var(--text-muted); margin: 0 10px; text-decoration: none;">Support</a>
-            </p>
+            <p>&copy; 2026 Morchris. Causly All Rights Reserved.</p>
+            <p><a href="privacy.html" style="color: var(--text-muted); text-decoration: none;">Privacy Policy</a></p>
         </div>
     </div>
 
