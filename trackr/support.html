@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support | Trackr</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #fdfcf0;
+            /* Matches the cream in your screenshot */
+            --text-main: #333333;
+            --text-muted: #666666;
+            --accent-teal: #a8d5ba;
+            /* Matches the soft teal banner */
+            --accent-dark: #1e293b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.5);
+            padding: 60px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+            border-top: 6px solid var(--accent-teal);
+        }
+
+        header {
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: var(--accent-dark);
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: var(--accent-dark);
+            border-bottom: 2px solid var(--accent-teal);
+            display: inline-block;
+            padding-right: 20px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        ul {
+            margin-bottom: 25px;
+            list-style-type: none;
+        }
+
+        li {
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        li::before {
+            content: "•";
+            color: var(--accent-teal);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            font-size: 1.4rem;
+            vertical-align: middle;
+        }
+
+        strong {
+            font-weight: 600;
+            color: var(--accent-dark);
+        }
+
+        .footer-note {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid #e2e8f0;
+            text-align: center;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px;
+            }
+
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Support</h1>
+            <p>We're here to help you get the most out of Trackr.</p>
+        </header>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <p><strong>Where is my data stored?</strong><br>
+            Trackr is a "local-first" app. All your data lives right on your device. We do not have servers that store
+            your personal health information.</p>
+
+        <p><strong>How do I back up my data?</strong><br>
+            Go to <strong>Settings > Data Management</strong>. You can export a backup file which you can save to your
+            iCloud, Google Drive, or email to yourself.</p>
+
+        <p><strong>I submitted a log by mistake. Can I delete it?</strong><br>
+            Yes. Go to the Journal tab, find the day with the incorrect log, tap "Edit" on the entry, and you will find
+            a delete option.</p>
+
+        <h2>Contact Us</h2>
+        <p>If you're experiencing issues, have feature requests, or just want to say hello, please email our support
+            team directly.</p>
+
+        <p><strong>Email:</strong> seagreenstudiosmi@gmail.com</p>
+        <p>We aim to respond to all inquiries within 24-48 hours.</p>
+
+        <div class="footer-note">
+            <p>&copy; 2026 Morchris. Trackr All Rights Reserved.</p>
+            <p><a href="privacy.html" style="color: var(--text-muted); text-decoration: none;">Privacy Policy</a></p>
+        </div>
+    </div>
+
+</body>
+
+</html>
