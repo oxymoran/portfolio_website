@@ -1,0 +1,15 @@
+"0","n_distinct(daily_activity$Id)"
+"1","[1] 33
+"
+"0","n_distinct(sleep_day$Id)"
+"1","[1] 24
+"
+"0","n_distinct(hourly_intensities$Id)"
+"1","[1] 33
+"
+"0","n_distinct(hourly_calories$Id)"
+"1","[1] 33
+"
+"0","n_distinct(weight_log$Id)"
+"1","[1] 8
+"

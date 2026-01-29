@@ -1,0 +1,76 @@
+"0","# Correlations with p-values"
+"0","# Sedentary vs Sleep"
+"0","cor_test_sed_sleep <- cor.test(activity_sleep$SedentaryMinutes, activity_sleep$TotalMinutesAsleep)"
+"0","print(cor_test_sed_sleep)  # r and p-value"
+"1","
+	Pearson's product-moment correlation
+
+data:  activity_sleep$SedentaryMinutes and activity_sleep$TotalMinutesAsleep
+t = -15.181, df = 411, p-value < 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.6578402 -0.5337719
+sample estimates:
+      cor 
+-0.599394 
+
+"
+"0","# Steps vs Sedentary"
+"0","cor_test_steps_sed <- cor.test(daily_activity$TotalSteps, daily_activity$SedentaryMinutes)"
+"0","print(cor_test_steps_sed)"
+"1","
+	Pearson's product-moment correlation
+
+data:  daily_activity$TotalSteps and daily_activity$SedentaryMinutes
+t = -10.615, df = 938, p-value < 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.3833971 -0.2691782
+sample estimates:
+       cor 
+-0.3274835 
+
+"
+"0","# Steps vs Calories"
+"0","cor_test_steps_cal <- cor.test(daily_activity$TotalSteps, daily_activity$Calories)"
+"0","print(cor_test_steps_cal)"
+"1","
+	Pearson's product-moment correlation
+
+data:  daily_activity$TotalSteps and daily_activity$Calories
+t = 22.472, df = 938, p-value < 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.5483688 0.6316184
+sample estimates:
+      cor 
+0.5915681 
+
+"
+"0","# Sleep vs Time in Bed"
+"0","cor_test_sleep_bed <- cor.test(sleep_day$TotalMinutesAsleep, sleep_day$TotalTimeInBed)"
+"0","print(cor_test_sleep_bed)"
+"1","
+	Pearson's product-moment correlation
+
+data:  sleep_day$TotalMinutesAsleep and sleep_day$TotalTimeInBed
+t = 51.483, df = 411, p-value < 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.9162253 0.9423445
+sample estimates:
+      cor 
+0.9304575 
+
+"
+"0","# Sleep efficiency (ratio) for insomnia outliers"
+"0","sleep_day$SleepEfficiency <- sleep_day$TotalMinutesAsleep / sleep_day$TotalTimeInBed"
+"0","mean_eff <- mean(sleep_day$SleepEfficiency, na.rm = TRUE)"
+"0","std_eff <- sd(sleep_day$SleepEfficiency, na.rm = TRUE)"
+"0","outliers <- sleep_day[sleep_day$SleepEfficiency < (mean_eff - 2 * std_eff), ]"
+"0","print(paste(""Mean Efficiency:"", round(mean_eff, 3), ""Std:"", round(std_eff, 3), ""Outliers:"", nrow(outliers)))"
+"1","[1] ""Mean Efficiency: 0.917 Std: 0.087 Outliers: 27""
+"
+"0","# Visualize efficiency"
+"0","ggplot(sleep_day, aes(x = SleepEfficiency)) + geom_histogram(binwidth = 0.01) + "
+"0","  labs(title = ""Distribution of Sleep Efficiency"")"

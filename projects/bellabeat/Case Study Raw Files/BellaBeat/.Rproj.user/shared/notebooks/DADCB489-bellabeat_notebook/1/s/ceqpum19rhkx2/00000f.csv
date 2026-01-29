@@ -1,0 +1,15 @@
+"0","nrow(daily_activity)"
+"1","[1] 940
+"
+"0","nrow(sleep_day)"
+"1","[1] 413
+"
+"0","nrow(hourly_intensities)"
+"1","[1] 22099
+"
+"0","nrow(hourly_calories)"
+"1","[1] 22099
+"
+"0","nrow(weight_log)"
+"1","[1] 67
+"

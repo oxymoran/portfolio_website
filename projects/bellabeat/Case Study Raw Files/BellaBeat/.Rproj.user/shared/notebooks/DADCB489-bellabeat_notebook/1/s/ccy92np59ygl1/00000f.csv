@@ -1,0 +1,11 @@
+"0","hourly_calories %>%  "
+"0","  select(Calories) %>%"
+"0","  summary()"
+"1","    Calories     
+ Min.   : 42.00  
+ 1st Qu.: 63.00  
+ Median : 83.00  
+ Mean   : 97.39  
+ 3rd Qu.:108.00  
+ Max.   :948.00  
+"

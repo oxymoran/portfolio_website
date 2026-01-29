@@ -1,0 +1,1 @@
+"0","ggplot(data = activity_sleep, aes(x=TotalMinutesAsleep, y=Calories)) + geom_point() + geom_smooth() + labs(title=""Total Sleep Minutes vs. Calories"", x=""Total Sleep Minutes"")"

@@ -1,0 +1,5 @@
+"0","daily_activity <- read.csv(""C:/Users/cmor7/OneDrive/Desktop/Case Study/BellaBeat/Data/Fitabase Data 4.12.16-5.12.16/dailyActivity_merged.csv"")"
+"0","sleep_day <- read.csv(""C:/Users/cmor7/OneDrive/Desktop/Case Study/BellaBeat/Data/Fitabase Data 4.12.16-5.12.16/sleepDay_merged.csv"")"
+"0","hourly_intensities <- read.csv(""C:/Users/cmor7/OneDrive/Desktop/Case Study/BellaBeat/Data/Fitabase Data 4.12.16-5.12.16/hourlyIntensities_merged.csv"")"
+"0","hourly_calories <- read.csv(""C:/Users/cmor7/OneDrive/Desktop/Case Study/BellaBeat/Data/Fitabase Data 4.12.16-5.12.16/hourlyCalories_merged.csv"")"
+"0","weight_log <- read.csv(""C:/Users/cmor7/OneDrive/Desktop/Case Study/BellaBeat/Data/Fitabase Data 4.12.16-5.12.16/weightLogInfo_merged.csv"")"

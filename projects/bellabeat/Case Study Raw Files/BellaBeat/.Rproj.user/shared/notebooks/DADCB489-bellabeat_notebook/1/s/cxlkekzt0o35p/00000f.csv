@@ -1,0 +1,12 @@
+"0","hourly_intensities %>%  "
+"0","  select(TotalIntensity,"
+"0","         AverageIntensity) %>%"
+"0","  summary()"
+"1"," TotalIntensity   AverageIntensity
+ Min.   :  0.00   Min.   :0.0000  
+ 1st Qu.:  0.00   1st Qu.:0.0000  
+ Median :  3.00   Median :0.0500  
+ Mean   : 12.04   Mean   :0.2006  
+ 3rd Qu.: 16.00   3rd Qu.:0.2667  
+ Max.   :180.00   Max.   :3.0000  
+"

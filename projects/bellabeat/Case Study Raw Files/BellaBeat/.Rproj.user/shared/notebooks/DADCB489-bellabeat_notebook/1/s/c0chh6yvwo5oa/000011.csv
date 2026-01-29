@@ -1,0 +1,6 @@
+"0","sleep_day <- sleep_day %>% "
+"0","  mutate("
+"0","    SleepDay = mdy_hms(SleepDay),  # Parse datetime (adjust format if needed)"
+"0","    Date = as.Date(SleepDay),"
+"0","  )"
+"0","head(sleep_day)"

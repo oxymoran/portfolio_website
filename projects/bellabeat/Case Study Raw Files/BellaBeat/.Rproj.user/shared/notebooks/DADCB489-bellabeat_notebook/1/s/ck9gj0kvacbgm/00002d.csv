@@ -1,0 +1,7 @@
+"0",""
+"0","grouped_hourly_calories <- hourly_calories %>%"
+"0","  group_by(Time) %>%"
+"0","  drop_na() %>%"
+"0","  summarise(mean_calories = mean(Calories))"
+"0",""
+"0","ggplot(data=grouped_hourly_calories, aes(x=Time, y=mean_calories)) + geom_col(fill='grey', color=""darkblue"") + theme(axis.text.x = element_text(angle = 45)) + labs(title=""Average Calories vs. Time"", y=""Mean Calories"")"

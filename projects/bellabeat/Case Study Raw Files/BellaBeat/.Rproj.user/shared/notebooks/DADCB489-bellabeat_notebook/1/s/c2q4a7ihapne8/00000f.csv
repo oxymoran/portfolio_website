@@ -1,0 +1,1 @@
+"0","activity_sleep <- full_join(sleep_day, daily_activity, by=c(""Id"", ""Date""))"

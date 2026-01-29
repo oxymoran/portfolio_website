@@ -1,0 +1,1 @@
+"0","ggplot(data=sleep_day, aes(x=TotalMinutesAsleep, y=TotalTimeInBed)) + geom_point()+ geom_smooth()+ labs(title=""Total Sleep Minutes vs. Total Time In Bed"", y=""Total Time in Bed"", x=""Total Sleep Minutes"")"

@@ -1,0 +1,7 @@
+"0",""
+"0","grouped_hourly_intensities <- hourly_intensities %>%"
+"0","  group_by(Time) %>%"
+"0","  drop_na() %>%"
+"0","  summarise(mean_intensity = mean(TotalIntensity))"
+"0",""
+"0","ggplot(data=grouped_hourly_intensities, aes(x=Time, y=mean_intensity)) + geom_col(fill='grey', color=""darkblue"") + theme(axis.text.x = element_text(angle = 45)) + labs(title=""Average Total Intensity vs. Time"", y=""Average Total Intensity"")"

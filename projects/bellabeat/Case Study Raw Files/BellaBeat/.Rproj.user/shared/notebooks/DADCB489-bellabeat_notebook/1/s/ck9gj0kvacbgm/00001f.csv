@@ -1,0 +1,1 @@
+"0","ggplot(data=daily_activity, aes(x=TotalSteps, y=SedentaryMinutes)) + geom_point()+ geom_smooth()+ labs(title=""Total Steps vs. Sedentary Minutes"", y=""Total Sedentary Minutes"", x=""Total Steps"")"

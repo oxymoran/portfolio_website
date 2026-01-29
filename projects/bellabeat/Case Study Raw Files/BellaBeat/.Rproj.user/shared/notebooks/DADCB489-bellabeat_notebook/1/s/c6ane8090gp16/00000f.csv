@@ -1,0 +1,14 @@
+"0","daily_activity %>%  "
+"0","  select(TotalSteps,"
+"0","         TotalDistance,"
+"0","         SedentaryMinutes,"
+"0","         Calories) %>%"
+"0","  summary()"
+"1","   TotalSteps    TotalDistance    SedentaryMinutes    Calories   
+ Min.   :    0   Min.   : 0.000   Min.   :   0.0   Min.   :   0  
+ 1st Qu.: 3790   1st Qu.: 2.620   1st Qu.: 729.8   1st Qu.:1828  
+ Median : 7406   Median : 5.245   Median :1057.5   Median :2134  
+ Mean   : 7638   Mean   : 5.490   Mean   : 991.2   Mean   :2304  
+ 3rd Qu.:10727   3rd Qu.: 7.713   3rd Qu.:1229.5   3rd Qu.:2793  
+ Max.   :36019   Max.   :28.030   Max.   :1440.0   Max.   :4900  
+"
