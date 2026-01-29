@@ -130,6 +130,30 @@
             color: var(--text-muted);
         }
 
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-muted);
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.2s;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: var(--accent-blue);
+        }
+
         @media (max-width: 600px) {
             .container {
                 padding: 30px;
@@ -146,20 +170,26 @@
 
     <div class="container">
 
+        <nav>
+            <a href="index.html" class="active">Features</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="support.html">Support</a>
+        </nav>
+
         <header>
-            <img src="../assets/icon.png" alt="Causly Logo"
+            <img src="assets/icon.png" alt="Causly Logo"
                 style="width: 120px; height: 120px; border-radius: 24px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
             <h1>Causly</h1>
             <p class="subtitle">Understand your health. Find your patterns.</p>
             <p>A private, local-first symptom journal designed to help you connect the dots between your lifestyle,
                 environment, and wellbeing.</p>
-            <img src="../assets/promotional_banner.png" alt="Causly Promotional Banner"
+            <img src="assets/promotional_banner.png" alt="Causly Promotional Banner"
                 style="width: 100%; border-radius: 12px; margin-top: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
         </header>
 
         <h2>Why Causly?</h2>
         <p>Your health is complex. Tracking it shouldn't be.</p>
-        <img src="../assets/feature_graphic.jpg" alt="Causly Feature Graphic"
+        <img src="assets/feature_graphic.jpg" alt="Causly Feature Graphic"
             style="width: 100%; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
         <ul>
             <li><strong>Private & Secure:</strong> Your data never leaves your device. No cloud servers, no data

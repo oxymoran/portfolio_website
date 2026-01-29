@@ -109,6 +109,30 @@
             color: var(--text-muted);
         }
 
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-muted);
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.2s;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: var(--accent-blue);
+        }
+
         @media (max-width: 600px) {
             .container {
                 padding: 30px;
@@ -124,6 +148,12 @@
 <body>
 
     <div class="container">
+
+        <nav>
+            <a href="index.html">Features</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="support.html" class="active">Support</a>
+        </nav>
 
         <header>
             <h1>Support</h1>
@@ -153,7 +183,12 @@
 
         <div class="footer-note">
             <p>&copy; 2026 Morchris. Causly All Rights Reserved.</p>
-            <p><a href="privacy.html" style="color: var(--text-muted); text-decoration: none;">Privacy Policy</a></p>
+            <p>
+                <a href="index.html"
+                    style="color: var(--text-muted); margin: 0 10px; text-decoration: none;">Features</a> |
+                <a href="privacy.html"
+                    style="color: var(--text-muted); margin: 0 10px; text-decoration: none;">Privacy</a>
+            </p>
         </div>
     </div>
 
