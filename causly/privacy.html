@@ -122,9 +122,13 @@
             display: flex;
             justify-content: center;
             gap: 30px;
-            margin-bottom: 40px;
+            padding: 20px 0;
+            background: var(--bg-color);
             border-bottom: 1px solid #e2e8f0;
-            padding-bottom: 20px;
+            width: 100%;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
         nav a {
@@ -156,13 +160,13 @@
 
 <body>
 
-    <div class="container">
+    <nav>
+        <a href="index.html">Features</a>
+        <a href="privacy.html" class="active">Privacy</a>
+        <a href="support.html">Support</a>
+    </nav>
 
-        <nav>
-            <a href="index.html">Features</a>
-            <a href="privacy.html" class="active">Privacy</a>
-            <a href="support.html">Support</a>
-        </nav>
+    <div class="container">
 
         <header>
             <h1>Privacy Policy</h1>
@@ -217,6 +221,12 @@
 
         <div class="footer-note">
             <p>&copy; 2026 Morchris. Causly All Rights Reserved.</p>
+            <p>
+                <a href="index.html"
+                    style="color: var(--text-muted); margin: 0 10px; text-decoration: none;">Features</a> |
+                <a href="support.html"
+                    style="color: var(--text-muted); margin: 0 10px; text-decoration: none;">Support</a>
+            </p>
         </div>
     </div>
 
